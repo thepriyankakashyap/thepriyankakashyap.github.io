@@ -6,7 +6,7 @@ html {
 .project_button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #0cfb9a;
+  background-color: hsl(155, 100%, 98%);
   border: none;
   color:#FFFFFF;
   text-align: center;
@@ -121,7 +121,7 @@ html {
 } 
 
 .navbar {
-  background-color: #f4d303;
+  background-color: #b3834d;
 }
 
 .nav-item {
@@ -347,7 +347,7 @@ html {
 /* Main Body */
 .mainbody {
   /*background: linear-gradient(to bottom, #663300 0%, #120A2A 100%);*/
-  background: linear-gradient(0deg, #eab301, #64a410, #349ddd, #b288d6);
+  background: linear-gradient(0deg, #254bf6, #4483a2, #f4f4f4, #4499fa);
 }
 
 
@@ -358,7 +358,7 @@ html {
 
 .about_me{
   /* padding-left: 40px; */
-  background-color: #50defe;
+  background-color: #ffffff;
   opacity: 1.0;
   /* color: #000000; */
   border-style: double;
