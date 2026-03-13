@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi Memorization — Pi Day</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="placeholder-page">
+
+    <!-- Rules Overlay -->
+    <div class="rules-overlay" id="rulesOverlay">
+        <div class="rules-card">
+            <div class="rules-icon">🔢</div>
+            <h2>Pi Digit Memorization — Rules</h2>
+            <ol class="rules-list">
+                <li>This is an <strong>individual event</strong>. Each participant competes on their own.</li>
+                <li>You must recite the digits of Pi (<strong>3.14159...</strong>) from memory, in order.</li>
+                <li><strong>No notes, phones, or aids</strong> of any kind are allowed.</li>
+                <li>You will recite the digits <strong>aloud</strong> to a judge who will verify them in real time.</li>
+                <li>On your <strong>first wrong digit</strong>, your attempt ends — the last correct digit is your final count.</li>
+                <li>You may take brief pauses to recall, but <strong>excessively long pauses</strong> (over 10 seconds) will end your turn.</li>
+                <li>The participant who correctly recites the <strong>most digits</strong> wins.</li>
+                <li>In case of a tie, a <strong>speed round</strong> will be used as a tiebreaker.</li>
+            </ol>
+            <button class="btn-start" id="btnRulesOk">
+                Got it, let's go!
+            </button>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-link">← Back to Home</a>
+    <h1>Pi Memorization</h1>
+    <p>Coming soon — stay tuned!</p>
+
+    <script>
+        document.getElementById('btnRulesOk').addEventListener('click', function() {
+            document.getElementById('rulesOverlay').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>

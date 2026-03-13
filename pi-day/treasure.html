@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt — Pi Day</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="placeholder-page">
+
+    <!-- Rules Overlay -->
+    <div class="rules-overlay" id="rulesOverlay">
+        <div class="rules-card">
+            <div class="rules-icon">🗺️</div>
+            <h2>Treasure Hunt — Rules</h2>
+            <ol class="rules-list">
+                <li>This is a <strong>team event</strong>. Stay with your team at all times.</li>
+                <li>Each team will receive a <strong>starting clue</strong>. Solve it to find the location of the next clue.</li>
+                <li>Clues are hidden across the <strong>campus</strong> — stay within designated boundaries.</li>
+                <li>Do <strong>not</strong> disturb, move, or damage any clue after finding it — other teams need them too.</li>
+                <li><strong>No running inside buildings</strong>. Be respectful of ongoing classes and activities.</li>
+                <li><strong>No phones or internet</strong> to search for answers — rely on your team's brainpower.</li>
+                <li>The first team to find the <strong>final treasure</strong> and return to the starting point wins.</li>
+                <li>In case of disputes, the <strong>organiser's decision is final</strong>.</li>
+            </ol>
+            <button class="btn-start" id="btnRulesOk">
+                Got it, let's go!
+            </button>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-link">← Back to Home</a>
+    <h1>Treasure Hunt</h1>
+    <p>Coming soon — stay tuned!</p>
+
+    <script>
+        document.getElementById('btnRulesOk').addEventListener('click', function() {
+            document.getElementById('rulesOverlay').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>

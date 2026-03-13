@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Teasers — Pi Day</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="quiz-page">
+
+    <!-- Rules Overlay -->
+    <div class="rules-overlay" id="rulesOverlay">
+        <div class="rules-card">
+            <div class="rules-icon">🧠</div>
+            <h2>Brain Teasers — Rules</h2>
+            <ol class="rules-list">
+                <li>This is a <strong>team event</strong>. Discuss with your teammates before answering.</li>
+                <li>The quizmaster will <strong>assign a question</strong> to your team — you do not choose.</li>
+                <li>Once the timer starts, your team has <strong>4–5 minutes</strong> to solve the puzzle.</li>
+                <li>When the timer runs out, the question is <strong>locked</strong> — no more time will be given.</li>
+                <li>Write your final answer clearly on the <strong>answer sheet</strong> provided.</li>
+                <li><strong>No phones, calculators, or internet</strong> allowed during the round.</li>
+                <li>Each correct answer earns points. Partial credit <strong>may</strong> be awarded at the quizmaster's discretion.</li>
+                <li>The quizmaster's decision is <strong>final</strong> in all matters.</li>
+            </ol>
+            <button class="btn-start" id="btnRulesOk">
+                Got it, let's go!
+            </button>
+        </div>
+    </div>
+
+    <!-- Sidebar: Question List -->
+    <aside class="quiz-sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" title="Back to Home">←</a>
+            <h2>Brain Teasers</h2>
+        </div>
+        <div class="question-list" id="questionList">
+            <!-- populated by JS -->
+        </div>
+    </aside>
+
+    <!-- Main Area -->
+    <main class="quiz-main">
+        <div class="quiz-topbar">
+            <span class="current-q-title" id="topbarTitle">Select a question</span>
+        </div>
+
+        <!-- Centered Timer -->
+        <div class="timer-display" id="timerDisplay" style="visibility: hidden;">
+            <div class="timer-ring">
+                <svg width="160" height="160" viewBox="0 0 160 160">
+                    <circle class="ring-bg" cx="80" cy="80" r="68"/>
+                    <circle class="ring-progress" id="timerRing" cx="80" cy="80" r="68"
+                        stroke-dasharray="427.26"
+                        stroke-dashoffset="0"/>
+                </svg>
+                <div class="timer-inner">
+                    <span class="timer-text" id="timerText">--</span>
+                    <span class="timer-label">TIME LEFT</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-content" id="quizContent">
+            <!-- Idle State (default) -->
+            <div class="idle-state" id="idleState">
+                <div class="idle-icon">π</div>
+                <h3>Ready to test your knowledge?</h3>
+                <p>Select a question from the sidebar to begin. Each question has a time limit — once you start, the clock is ticking!</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="quiz.js"></script>
+    <script>
+        document.getElementById('btnRulesOk').addEventListener('click', function() {
+            document.getElementById('rulesOverlay').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
