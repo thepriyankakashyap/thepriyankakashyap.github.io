@@ -52,7 +52,7 @@ body {
     position: relative;
     z-index: 1;
     text-align: center;
-    padding: 1.5rem 2rem 2rem;
+    padding: 1.5rem 2rem 4rem;
     max-width: 1000px;
     width: 100%;
 }
@@ -291,10 +291,25 @@ body {
     font-size: 0.9rem;
 }
 
+/* ===== DEV FOOTER (fixed, all pages) ===== */
+footer:not(.home-footer) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    z-index: 999;
+    font-size: 0.85rem;
+}
+
 /* ===== QUIZ PAGE LAYOUT ===== */
 .quiz-page {
     display: flex;
     height: 100vh;
+    padding-bottom: 36px;
 }
 
 /* --- Sidebar --- */
@@ -849,7 +864,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 2rem 4rem;
 }
 
 .placeholder-page .back-link {
