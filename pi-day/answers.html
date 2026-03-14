@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Answers — Pi Day</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .answers-page {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        .answers-container {
+            max-width: 720px;
+            width: 100%;
+        }
+
+        .answers-back {
+            display: inline-block;
+            color: var(--accent-purple);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            transition: letter-spacing 0.2s;
+        }
+
+        .answers-back:hover {
+            letter-spacing: 1px;
+        }
+
+        .answers-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .answers-header h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.4rem;
+        }
+
+        .answers-header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .answers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1rem;
+        }
+
+        .answer-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.2s;
+        }
+
+        .answer-card:hover {
+            border-color: var(--accent-purple);
+            box-shadow: 0 2px 12px rgba(124, 58, 237, 0.1);
+        }
+
+        .answer-num {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--accent-purple);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .answer-body {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .answer-name {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .answer-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        @media (max-width: 768px) {
+            .answers-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .answers-header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="answers-page">
+    <div class="pi-bg-symbol">&pi;</div>
+    <div class="answers-container">
+        <a href="index.html" class="answers-back">&larr; Back to Home</a>
+
+        <div class="answers-header">
+            <h1>Quiz Answer Key</h1>
+            <p>Answers only — no explanations</p>
+        </div>
+
+        <div class="answers-grid">
+
+            <div class="answer-card">
+                <div class="answer-num">1</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Knockout Tournament</div>
+                    <div class="answer-value">46 matches</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">2</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Digit Hunt</div>
+                    <div class="answer-value">20 times</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">3</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Farmer's Headcount</div>
+                    <div class="answer-value">13 sheep</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">4</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Three Stickers</div>
+                    <div class="answer-value">RED</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">5</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Spy's Secret Code</div>
+                    <div class="answer-value">3</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">6</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Mysterious Sequence</div>
+                    <div class="answer-value">N</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">7</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Island of Truth and Lies</div>
+                    <div class="answer-value">C is a Knave</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">8</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Painted Doors</div>
+                    <div class="answer-value">Blue</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">9</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Five Mondays</div>
+                    <div class="answer-value">Sunday</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">10</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Number Pyramid</div>
+                    <div class="answer-value">30</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">11</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Queue Puzzle</div>
+                    <div class="answer-value">Position 4</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">12</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Snail on the Wall</div>
+                    <div class="answer-value">Day 28</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">13</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Pass-the-Parcel</div>
+                    <div class="answer-value">Kid 3</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">14</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Cookie Jar</div>
+                    <div class="answer-value">7 cookies</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">15</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Liar's Club</div>
+                    <div class="answer-value">Bhaskar</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">16</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Broken Clock</div>
+                    <div class="answer-value">4:00 PM Tuesday</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">17</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Handshake Problem</div>
+                    <div class="answer-value">28 handshakes</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">18</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Wolf, Goat &amp; Cabbage</div>
+                    <div class="answer-value">7 crossings</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">19</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Odd One Out</div>
+                    <div class="answer-value">BANANA</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">20</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Number = Number Pattern</div>
+                    <div class="answer-value">6</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">21</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Dark Room</div>
+                    <div class="answer-value">The match</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">22</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Traveller's Dilemma</div>
+                    <div class="answer-value">His son</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">23</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Shopkeeper's Change</div>
+                    <div class="answer-value">&#8377;100</div>
+                </div>
+            </div>
+
+            <div class="answer-card">
+                <div class="answer-num">24</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Calendar Trick</div>
+                    <div class="answer-value">Wednesday</div>
+                </div>
+            </div>
+
+            
+            <div class="answer-card">
+                <div class="answer-num">25</div>
+                <div class="answer-body">
+                    <div class="answer-name">The Map Colouring</div>
+                    <div class="answer-value">4 colours</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
