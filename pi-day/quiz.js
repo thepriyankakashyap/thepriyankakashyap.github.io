@@ -317,7 +317,8 @@ const questions = [
             <p>Without checking a calendar — if <strong>January 1st</strong> of a certain year is a <strong>Wednesday</strong>, what day of the week is <strong>December 31st</strong> of that <strong>same non-leap year</strong>?</p>
         `
     },
-        {
+    
+    {
         id: 25,
         name: "The Map Colouring",
         time: 60,
