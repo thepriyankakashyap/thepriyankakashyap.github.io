@@ -317,25 +317,8 @@ const questions = [
             <p>Without checking a calendar — if <strong>January 1st</strong> of a certain year is a <strong>Wednesday</strong>, what day of the week is <strong>December 31st</strong> of that <strong>same non-leap year</strong>?</p>
         `
     },
-    {
+        {
         id: 25,
-        name: "The Bridge at Night",
-        time: 300,
-        difficulty: "Hard",
-        question: `
-            <p>Four people need to cross a narrow bridge at night. They have <strong>one torch</strong> and the bridge can hold only <strong>2 people at a time</strong>. Anyone crossing must carry the torch (no throwing). They walk at different speeds:</p>
-            <ul>
-                <li><strong>A</strong> takes <strong>1 minute</strong></li>
-                <li><strong>B</strong> takes <strong>2 minutes</strong></li>
-                <li><strong>C</strong> takes <strong>5 minutes</strong></li>
-                <li><strong>D</strong> takes <strong>10 minutes</strong></li>
-            </ul>
-            <p>When two people cross together, they walk at the <strong>slower</strong> person's speed.</p>
-            <p>What is the <strong>shortest total time</strong> for all four to cross?</p>
-        `
-    },
-    {
-        id: 26,
         name: "The Map Colouring",
         time: 60,
         difficulty: "Easy",
